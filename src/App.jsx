@@ -273,7 +273,16 @@ function App() {
         <footer
           style={{ textAlign: "center", marginTop: "40px", color: "#aaa" }}
         >
-          &copy; {new Date().getFullYear()} My Portfolio
+          <img
+            src={logo}
+            alt="Logo"
+            style={{
+              height: "30px",
+              marginRight: "20px",
+              marginBottom: "-10px",
+            }}
+          />
+          &copy; {new Date().getFullYear()}{" "}
         </footer>
       </div>
     </div>
