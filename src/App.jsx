@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import logo from "./logo.png"; // Assuming your logo image is named 'logo.png' and is placed in the 'src' folder
+import logo from "./logo.png";
+import project1Img from "./assets/mock 1.jpg"; // Add your project images here
+import project2Img from "./assets/mock 2.jpg";
+import project3Img from "./assets/mock 3.jpg";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -85,7 +88,7 @@ function App() {
                 fontSize: "1.2em",
               }}
             >
-              Contact
+              Let's talk
             </a>
           </li>
         </ul>
@@ -93,52 +96,78 @@ function App() {
 
       <div style={{ padding: "20px" }}>
         <header style={{ marginBottom: "40px" }}>
-          <h1 style={{ fontSize: "3em", margin: "0", color: "#333" }}>
-            My Portfolio
+          <h1 style={{ fontSize: "3em", margin: "0", color: "#33" }}>
+            Hi I'm Mike
           </h1>
-          <p style={{ fontSize: "1.5em", color: "#777" }}>
-            Welcome to my personal portfolio
+          <p style={{ fontSize: "1.5em", color: "#77" }}>
+            Welcome to my portfolio.
           </p>
         </header>
 
         <section id="about" style={{ marginBottom: "40px" }}>
-          <h2 style={{ fontSize: "2em", color: "#333" }}>About Me</h2>
-          <p style={{ fontSize: "1.2em", color: "#555" }}>
-            I am a passionate developer with a focus on creating engaging user
-            experiences. My skill set includes modern front-end frameworks,
-            back-end technologies, and responsive design principles.
+          <h2 style={{ fontSize: "2em", color: "#33" }}>About Me</h2>
+          <p style={{ fontSize: "1.2em", color: "#55" }}>
+            I am a versatile Graphic Designer and Web Developer with 7+ years in
+            multimedia, marketing, and print design. Strong in collaboration and
+            consistently exceeding client expectations. Expert in creating
+            impactful marketing campaigns and delivering high-quality work on
+            time and within budget.
           </p>
         </section>
 
         <section id="projects" style={{ marginBottom: "40px" }}>
-          <h2 style={{ fontSize: "2em", color: "#333" }}>Projects</h2>
+          <h2 style={{ fontSize: "2em", color: "#33" }}>Projects</h2>
           <ul style={{ listStyleType: "none", padding: "0" }}>
             <li style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "1.5em", color: "#555" }}>Project 1</h3>
-              <p style={{ fontSize: "1.1em", color: "#777" }}>
-                A web application that allows users to manage their tasks
-                efficiently.
+              <h3 style={{ fontSize: "1.5em", color: "#55" }}>Project 1</h3>
+              <p style={{ fontSize: "1.1em", color: "#77" }}>
+                <img
+                  src={project1Img}
+                  alt="Project 1"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                    marginRight: "20px",
+                  }}
+                />
+                Logo Created for Water's Edge Ministries
               </p>
             </li>
             <li style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "1.5em", color: "#555" }}>Project 2</h3>
-              <p style={{ fontSize: "1.1em", color: "#777" }}>
-                An e-commerce site with a focus on user experience and
-                performance.
+              <h3 style={{ fontSize: "1.5em", color: "#55" }}>Project 2</h3>
+              <p style={{ fontSize: "1.1em", color: "#77" }}>
+                <img
+                  src={project2Img}
+                  alt="Project 1"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                    marginRight: "20px",
+                  }}
+                />
+                Logo Created for whiskey Warrior
               </p>
             </li>
             <li style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "1.5em", color: "#555" }}>Project 3</h3>
-              <p style={{ fontSize: "1.1em", color: "#777" }}>
-                A mobile app that helps users track their fitness goals and
-                progress.
+              <h3 style={{ fontSize: "1.5em", color: "#55" }}>Project 3</h3>
+              <p style={{ fontSize: "1.1em", color: "#77" }}>
+                <img
+                  src={project3Img}
+                  alt="Project 1"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                    marginRight: "20px",
+                  }}
+                />
+                Logo Created for Top Line Wall and Ceiling
               </p>
             </li>
           </ul>
         </section>
 
         <section id="contact" style={{ marginBottom: "40px" }}>
-          <h2 style={{ fontSize: "2em", color: "#333" }}>Contact</h2>
+          <h2 style={{ fontSize: "2em", color: "#33" }}>Let's Talk</h2>
           <form
             onSubmit={handleSubmit}
             style={{ maxWidth: "600px", margin: "0 auto" }}
